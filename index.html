@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b732a93ed2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#article">Articles</a></li>
+                <li><a href="#admin.html" onclick="location.href='admin.html'">Write A Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+            </ul>
+            
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Thabiso Motau</span><br>From South Africa</h1>
+            <p>Welcome to the world of<span> Blog Writing</span></p>
+            <a href="#admin.html" onclick="location.href='admin.html'" class="btn">Add New Article</a>
+        </div>
+        
+    </div>
+</div>
+<!---------------------------------------------------------------------------------->
+<div id="article">
+    <div class="container">
+        <div class="rows">
+            <h1 class="sub-title">My Blog</h1>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('NEWS')">NEWS</p>
+                <p class="tab-links" onclick="opentab('CODING')">CODING</p>
+                <p class="tab-links" onclick="opentab('PROJECTS')">PROJECTS</p>
+            </div>
+            <div class="tab-contents active-link" id="NEWS">
+                <ul>
+                    <div class="row">
+                        <div class="col"><img src="images/Bitcoin.png" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>BITCOIN</h3>
+                                <a href="#Bitcoinpage.html" onclick="location.href='Bitcoinpage.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="col"><img src="images/News.png" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>NEWS24</h3>
+                                <a href="#News24page.html" onclick="location.href='News24page.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="col"><img src="images/Jobs.png" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>IT JOPS</h3>
+                                <a href="#ITjobs.html" onclick="location.href='ITjobs.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="tab-contents" id="CODING">
+                <div style="font-weight: 500; padding: 0 40px; font-size: 35px; text-align: center;">TOOLS USED TO LEARN HOW TO CREATE WEBSITE</div>
+                <ul>
+                    <div class="row">
+                        <div class="col"><img src="images/Html.png" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>HTML CODING</h3>
+                                <a href="#htmlpage.html" onclick="location.href='htmlpage.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="col"><img src="images/Css2.png" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>CSS3 CODING</h3>
+                                <a href="#csspage.html" onclick="location.href='csspage.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="col"><img src="images/Js.png" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>JAVASCRIPT CODING</h3>
+                                <a href="#jspage.html" onclick="location.href='jspage.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><img src="images/Py2.png" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>PYTHON CODING</h3>
+                                <a href="#pythonpage.html" onclick="location.href='pythonpage.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="col"><img src="images/github-logo.png" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>GITHUB CODING</h3>
+                                <a href="#githubpage.html" onclick="location.href='githubpage.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="col"><img src="images/bootstrap.png" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>BOOTSTRAP CODING</h3>
+                                <a href="#bootstrappage.html" onclick="location.href='bootstrappage.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="tab-contents" id="PROJECTS">
+                <ul>
+                    <div class="row">
+                        <div class="col"><img src="images/web-pic.png" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>PORTFOLIO WEBSITE</h3>
+                                <a href="#website.html" onclick="location.href='website.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="col"><img src="images/ARDIUNO & PROCESSING.png" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>ARDUINO & PROCESSING</h3>
+                                <a href="#A&P.html" onclick="location.href='A&P.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="col"><img src="images/POWER.jpg" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>POWER SUPPLY</h3>
+                                <a href="#power.html" onclick="location.href='power.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><img src="images/CV.jpg" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>CV REVAMPING</h3>
+                                <a href="#cv.html" onclick="location.href='cv.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="col"><img src="images/work-3.png" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>WATER DISPENSOR</h3>
+                                <a href="#waterdis.html" onclick="location.href='waterdis.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="col"><img src="images/PLC.jpg" class="img-thumbnail">
+                            <div class="layer">
+                                <h3>PLC</h3>
+                                <a href="#plc.html" onclick="location.href='plc.html'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------contact------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>thabisomjakhula@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>0826758855</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/message/76NSZKXLFANIJ1"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://twitter.com/MOTAUTHABISO1?t=LcowSISslRxapDvuQZcYvA&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?i=1710njn7bojoj&utm_content=3a4hgic"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/motau-thabiso-22b2971bb"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class=fab fa-facebook></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="Text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2" >Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023 Thabiso | Design by Thabiso <i class="fas fa-heart"></i> | All rights Reserved. </p>
+    </div>
+</div>
+
+<!----------------------------------Scripts Sections------------------------------------------------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right= "0";
+    }
+    function closemenu(){
+        sidemeu.style.right= "-200px";
+    }
+
+</script>
+<!-----------------------------------------contact form sript-------------------------------------------------------------> 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxTS-2C3zKfzwr7l8q2Gfk2VRhomDkMY99h01iDhfvLMj6X36k9ncj8baenrfxdpob-ew/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script src="./js/jquery.js"></script>
+<script src="./js/popper.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
